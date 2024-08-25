@@ -5,10 +5,11 @@ import React, { useState } from 'react';
 import satData from "./components/satData";
 
 function App() {
-  console.log(satData)
-  const [sat, setSat] = useState(satData);
-  const displaySats = [...new Set(satData.map((data) => data.orbitType))];
+  //console.log(satData) - tests the satdata fetch (confirmed)
+  const [sat, setSat] = useState(satData); //x
+  const displaySats = [...new Set(satData.map((data) => data.orbitType))]; //x
 
+  //x filters for sat match
   const filterByType = (currentType) => {
     const displaySats = satData.filter((newSatDisplay) => {
       return newSatDisplay.orbitType === currentType;
@@ -16,8 +17,9 @@ function App() {
     setSat(displaySats);
   }
 
+  //x
   return (
-    <div>
+    <div> 
       <Banner />
       <Buttons
       filterByType={filterByType}
