@@ -1,3 +1,5 @@
+import './styling.css';
+
 const Table = ({ sat }) => {
   return (
     <table>
@@ -15,8 +17,7 @@ const Table = ({ sat }) => {
           <td>{satellite.name}</td>
           <td>{satellite.type}</td>
           <td>{satellite.launchDate}</td>
-          <td>{satellite.orbitType}</td>
-          <td>{satellite.operational ? 'Yes' : 'No'}</td>
+          <td>{satellite.operational ? 'Active' : 'Inactive'}</td>
         </tr>
       ))}
       <tr>
