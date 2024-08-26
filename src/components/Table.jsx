@@ -20,9 +20,6 @@ const Table = ({ sat }) => {
           <td>{satellite.operational ? 'Active' : 'Inactive'}</td>
         </tr>
       ))}
-      <tr>
-       <td>Row Data TBD</td>
-      </tr>
      </tbody>
    </table>
   );
