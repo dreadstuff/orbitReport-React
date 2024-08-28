@@ -10,8 +10,6 @@ export default function Banner () {
         <div></div>
         <div></div>
     </div>
-            
-
             </h1>
             <p>
             Click on the buttons to see the satellites in that orbit type
