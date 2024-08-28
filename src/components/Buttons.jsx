@@ -8,9 +8,9 @@ const Buttons = ({ filterByType, setSat, displaySats }) => {
   return (
     <div className="flex-container">
       {displaySats.map((sat, id) => ( //iterates over each orbit type, creates button - onclick initiates the filter
-        <button onClick={() => filterByType(sat)} key={id}>{sat} Orbit</button> 
+        <button className="ezy-spring-button outer" onClick={() => filterByType(sat)} key={id}><span class="button_top">{sat} Orbit</span></button> 
       ))}
-      <button onClick={() => setSat(satData)}>All Orbits</button>
+      <button className="ezy-spring-button outer" onClick={() => setSat(satData)}><span class="button_top">All Orbits</span></button>
     </div>//second onclick resets to show all orbits
   );
 };
